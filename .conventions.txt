@@ -1,0 +1,22 @@
+Source: 
+  https://dart.dev/tools/pub/package-layout  
+  
+Following is a summary of dart package convention -
+
+my_dart_package/            - root package directory
+  .packages                 - dependencies mapping with system cache
+  pubspec.yaml              - meta-info and dependencies 
+  pubspec.lock              - final used dependencies info
+  bin/                      - executal main file
+    main.dart
+  doc/                      - documentations
+  example/                  - application samples
+  lib/                      - this app's library package
+    string_merger.dart      - file to be imported by others
+    src/                    - internal files used by this lib
+      util.dart             - this file should not be exposed
+  test/                     - unit test cases
+    string_merger_test.dart
+  web/                      - web specifc files
+    index.html              - 
+    style.css               - this can be in nested folders
