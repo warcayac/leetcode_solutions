@@ -1,5 +1,6 @@
 // info: https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
 // info: https://afteracademy.com/blog/introduction-to-graph-in-programming
+// https://www.geeksforgeeks.org/difference-between-graph-and-tree/
 
 class Graph {
   final bool isDirected;            // directed graph
