@@ -5,8 +5,8 @@ List<int> interval(int a, int b) {
   return tuple<int>(a, b);
 }
 
-bool is4ByteInt(int n) {
-  const kLowerLimit = -2147483648; // -2^31
-  const kUpperLimit = 2147483647;  // 2^31 - 1
+bool isSigned32bitInteger(int n) {
+  const kLowerLimit = -2147483648; // -2^31 = 0xFFFFFFFF80000000
+  const kUpperLimit = 2147483647;  // 2^31 - 1 = 0x7FFFFFFF
   return kLowerLimit <= n && n <= kUpperLimit;
 }
