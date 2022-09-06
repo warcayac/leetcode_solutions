@@ -6,8 +6,7 @@ import 'dart:math';
 
 class TreeNode {
   static TreeNode? buildBinaryTree(List<int?> values) {
-    if (values.length.isEven) return null;
-    
+    // if (values.length.isEven) return null;
     TreeNode? root;
     var index = 0;
     var parents = <TreeNode?>[];
@@ -43,5 +42,5 @@ class TreeNode {
   TreeNode([this.val = 0, this.left, this.right]);
 
   @override
-  String toString() => '$val(L:$left, R:$right)';
+  String toString() => '$val=>(L:$left, R:$right)';
 }
