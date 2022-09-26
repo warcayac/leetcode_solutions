@@ -1,4 +1,4 @@
-// Las permutación puede hacerse tomando todo el conjunto o un sub-conjunto
+// La permutación puede hacerse tomando todo el conjunto o un sub-conjunto
 // En el caso de tomar todo el conjunto, debe considerarse el caso de elementos
 // repetitivos, en cuyo caso la fórmula a aplicar sería:
 // Permutaciones = N! / (n1! n2! ... ni!)
@@ -7,6 +7,9 @@
 //  - "ni" indica el número de repeticiones de un elemento
 //  - {n1,n2,...,ni} : subconjunto de elementos únicos
 // Si todos los elementos fuesen distintos, entonces la fórmula sería: P = N!
+// Permutations (P) are to be formed using k of the objects at a time, the number of 
+// different permutations possible is denoted by the symbol P(n,k). Formula:
+// P(n,k) = n! / (n-k)!
 
 // Esta función asume que todos los elementos son distintos
 List<List<T>> getPermutations<T extends Object>(List<T> list) {
