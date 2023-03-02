@@ -1,4 +1,6 @@
-import 'p472_concatenated_words_SAMPLES.dart';
+import 'samples_1.dart';
+import 'samples_4.dart';
+import 'samples_5.dart';
 
 
 class MyWord {
@@ -129,8 +131,11 @@ void main(List<String> args) {
   // ..findAllConcatenatedWordsInADict2(['at','de','ef','es','re','features','defeature','defeatures']) // ["defeatures"]
   // ..findAllConcatenatedWordsInADict2(longcase1)
   // ..findAllConcatenatedWordsInADict2(longcase2)
-  ..findAllConcatenatedWordsInADict2(longcase3)
+  // ..findAllConcatenatedWordsInADict2(longcase4)
+  // ..findAllConcatenatedWordsInADict2(longcase5)
+  ..findAllConcatenatedWordsInADict2(['a','aa','aaa','aaaa','aaaaa','aaaaaa','aaaaaaa','aaaaaaaa','aaaaaaaaa','aaaaaaaaaa','aaaaaaaaaaa','aaaaaaaaaaaa','aaaaaaaaaaaaa','aaaaaaaaaaaaaa','aaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaaaaaaz'])
   ;
+  print('\nJob done!');
 }
 
 /* 
@@ -143,4 +148,6 @@ Answer for longcase2:
 Answer for longcase3:
 [greenhorn, greenheads, greenheart, greenstones, oversupplied, oversupplies, soldierships, survivorships]
 
+Answer for longcase4:
+["deathwatches","handcuffed"]
 */
