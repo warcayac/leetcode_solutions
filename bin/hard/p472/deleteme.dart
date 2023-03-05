@@ -1,9 +1,21 @@
-import 'package:collection/collection.dart';
+class AnyObj {
+  int id;
+  AnyObj? next;
+  AnyObj(this.id);
+}
+
 
 void main(List<String> args) {
-  var chars = ['a','a','a','b','b','a','a','c'];
-  // var re = RegExp(r'(?:(.))(?!\1)');
-  // print(chars.join().split(re));
-  print(chars.splitBetween((a, b) => a != b));
+  var a = AnyObj(1);
+  var b = AnyObj(2);
+  var refX = a;
+  var refY = refX;
+  refX = b;
+  print(refX.id);
+  print(refY.id);
+  
+  b.next = a;
+  refX.next?.id = 7;
+  print(refX.next?.id ?? '?');
   print('\nJob done!');
 }
